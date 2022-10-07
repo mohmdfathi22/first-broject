@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: #181818;
+    color: white;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex: 1;
+}
+
+#right {
+    flex: 1;
+}
+
+/* sign in */
+
+#signin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    padding-bottom: 1rem;
+}
+
+div form {
+    width: 80%;
+    padding-bottom: 3rem;
+}
+
+div .logo {
+    margin-bottom: 30px;
+}
+
+div .logo img {
+    width: 200px;
+}
+
+div label {
+    font-size: 14px;
+    line-height: 2rem;
+    font-weight: 500px;
+}
+
+div .primary-btn {
+    width: 100%;
+}
+
+div .text-input {
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    background-color: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 5px 10px;
+    line-height: 1,3rem;
+}
+
+.primary-btn {
+    background-color: orangered;
+    text-align: center;
+    color: #ccc;
+    border: 0;
+    padding: 5px 10px;
+    font-weight: 100px;
+    cursor: pointer;
+}
+
+div .links {
+    align-items: center;
+    text-align: center;
+    font-weight: 200px;
+    margin-bottom: 8px;
+}
+
+div .links a {
+    display: block;
+    margin-bottom: 12px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.or {
+    display: flex;
+    color: orangered;
+    font-size: 16px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.or .bar {
+    flex: auto;
+    height: 1px;
+    background-color: white;
+    width: 80px;
+    margin: 0 10px
+}
+
+.secondary-btn {
+    background: none;
+    text-align: center;
+    color: #ccc;
+    border: 1px solid white;
+    padding: 5px 15px;
+    font-weight: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 12px;
+    width: 50%;
+}
+
+#main-footer {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer p {
+    font-size: 10px;
+    color: white;
+}
+
+footer div a {
+    color: orangered;
+    display: inline-block;
+    font-size: 10px;
+
+}
+
+#showcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background : url('img/login-bg.jpg') no-repeat center center/ cover;
+    height: 100vh;
+}
+
+div #right .secondary-btn {
+    padding: 5px 75px;
+}
+
+@media (min-width: 1200px) {
+    #left {
+      flex: 4;
+    }
+  
+    #right {
+      flex: 6;
+    }
+  }
+  
+
+@media (max-width: 768px) {
+    body {
+      overflow: auto;
+    } }
+
